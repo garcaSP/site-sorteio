@@ -87,3 +87,45 @@ main{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+@keyframes animacaotextobalcanico{
+    0{
+        transform: scale(1) rotate(-5deg);
+    }
+    50%{
+        transform: rotate(20deg) scale(1.4);
+        
+    }
+    100%{
+        transform: scale(1) rotate(-5deg);
+    }
+}
+@keyframes glitch{
+    0{
+        color: red;
+    }
+    50%{
+        color: rgb(104, 255, 3);
+    }
+    100%{
+        color: rgb(0, 166, 255);
+
+    }
+}
+.titulo{
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(255, 0, 0);
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    bottom: 200px;
+    animation: glitch 0.2s ease 0s infinite;
+    font-weight: bolder;
+}
+.divTitulo{
+    animation: animacaotextobalcanico 1s ease 0s infinite;
+
+}
